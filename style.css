@@ -1,0 +1,255 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+   background: linear-gradient(#b8c7d6 ,#7f8c8d);
+  line-height: 1.6;
+  color: #333;
+  
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+header {
+  background: #0f0d0d;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+/* Navbar*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+.nav-links a {
+  color: #fff;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #00bcd4;
+}
+/* Section-1*/
+.section {
+  padding: 4rem 2rem;
+}
+.Home {
+   background: linear-gradient(#b8c7d6 ,#7f8c8d);
+  text-align: center;
+  display: flex;
+}
+.Home h1{
+    font-size: 25px;
+    color: rgb(5, 5, 5);
+    margin-left: 450px;
+}
+.Home p{
+    font-size: 20px;
+    color: rgb(14, 13, 13);
+    margin-top: 5px;
+    margin-left: 450px;
+
+}
+
+
+.image{
+    float: right;
+    margin-left: 400px;
+    width: 250px;
+    border-radius: 15px;
+}
+
+ h2{
+    font-size: 20px;
+    text-align: center;
+    
+ }
+ 
+
+.container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+.projects {
+      display: flex;
+      justify-content: center; 
+      gap: 50px;               
+      flex-wrap: wrap;         
+      margin: 25px auto;
+      max-width: 1000px;
+    }
+
+    .card {
+      background-color: #e7dbdb;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /*Skill*/
+    .skills-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px 20px;
+      text-align: center;
+    }
+
+    .skills-section h2 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .skill-card {
+      background-color: #7a9489;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 140px;
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.05);
+    }
+
+    .skill-name {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: whitesmoke;
+    }
+
+
+    .fade-in:nth-child(1) { transition-delay: 0.2s; }
+    .fade-in:nth-child(2) { transition-delay: 0.4s; }
+    .fade-in:nth-child(3) { transition-delay: 0.6s; }
+
+  /* FOOTER*/
+  
+
+.footer {
+    background: linear-gradient(#121314);
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+    color:whitesmoke;
+    font-size: 20px;
+    gap: 5px;
+}
+
+.fa-facebook {
+    font-size: 30px;
+    color: blue;
+
+}
+
+.fa-square-instagram {
+    font-size: 30px;
+    color: rgb(163, 60, 77);
+}
+
+.fa-square-twitter {
+    font-size: 30px;
+    color: rgb(41, 123, 156);
+}
+.linkedin-icon {
+  font-size: 30px;
+    color: rgb(41, 123, 156);
+}
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .Home {
+    flex-direction: column;
+    text-align: center; }
+
+  .Home h1, .Home p {
+    margin-left: 0;
+  }
+
+  .Home img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px)
+ {
+  .left {
+    font-size: 1.2rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+  }
+  .card {
+    width: 90%;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
