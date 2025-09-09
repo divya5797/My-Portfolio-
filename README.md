@@ -13,3 +13,7 @@ Projects Section – Highlights of academic and personal projects
 Skills Section – Technologies and tools I’m familiar with
 
 Footer – Social media links to connect with me
+
+
+
+Live at:- 
