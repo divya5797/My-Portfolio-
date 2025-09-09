@@ -70,14 +70,6 @@ nav {
 
 }
 
-
-.image{
-    float: right;
-    margin-left: 400px;
-    width: 250px;
-    border-radius: 15px;
-}
-
  h2{
     font-size: 20px;
     text-align: center;
@@ -231,9 +223,7 @@ nav {
     margin-left: 0;
   }
 
-  .Home img {
-    width: 150px;
-  }
+  
 }
 
 @media (max-width: 480px)
@@ -252,4 +242,5 @@ nav {
   .skills-grid {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
+
 }
